@@ -20,10 +20,44 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="/login.css" rel="stylesheet">
+  <link href="img/cadastro.css" rel="stylesheet">
 
   </head>
   <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/icon.png" height="42" width="42">Pizzalola</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Pedido
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.html">Perfil</a>
+           </li>b
+		  <li class="nav-item">
+	      <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -71,7 +105,7 @@
   </nav>
   <section class="jumbotron text-center">
       <div class="container">
-          <h1 class="jumbotron-heading">E-COMMERCE CART</h1>
+          <h1 class="jumbotron-heading">Carrinho</h1>
        </div>
   </section>
 
@@ -83,36 +117,36 @@
                       <thead>
                           <tr>
                               <th scope="col"> </th>
-                              <th scope="col">Product</th>
-                              <th scope="col">Available</th>
-                              <th scope="col" class="text-center">Quantity</th>
-                              <th scope="col" class="text-right">Price</th>
+                              <th scope="col">Produto</th>
+                              <th scope="col">Disponibilidade</th>
+                              <th scope="col" class="text-center">Quantidade</th>
+                              <th scope="col" class="text-right">Preço</th>
                               <th> </th>
                           </tr>
                       </thead>
                       <tbody>
                           <tr>
-                              <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                              <td>Product Name Dada</td>
-                              <td>In stock</td>
-                              <td><input class="form-control" type="text" value="1" /></td>
-                              <td class="text-right">124,90 €</td>
+                              <td><img src="img/1.jpg" width="50px" height="50px" /> </td>
+                              <td>Pizza de alguma coisa</td>
+                              <td>Disponivel</td>
+                              <td><input class="form-control" type="text" value="1"/></td>
+                              <td class="text-right">R$60,90</td>
                               <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                           </tr>
                           <tr>
-                              <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                              <td>Product Name Toto</td>
-                              <td>In stock</td>
-                              <td><input class="form-control" type="text" value="1" /></td>
-                              <td class="text-right">33,90 €</td>
+                              <td><img src="img/bebida1.jpg" width="50px" height="50px"/> </td>
+                              <td>Coquinha</td>
+                              <td>Disponivel</td>
+                              <td><input class="form-control" type="text" value="5" /></td>
+                              <td class="text-right">R$33,90</td>
                               <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                           </tr>
                           <tr>
-                              <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                              <td>Product Name Titi</td>
-                              <td>In stock</td>
+                              <td><img src="img/2.jpg" width="50px" height="50px"/> </td>
+                              <td>Pizza só que diferente da primeira</td>
+                              <td>Disponivel</td>
                               <td><input class="form-control" type="text" value="1" /></td>
-                              <td class="text-right">70,00 €</td>
+                              <td class="text-right">R$50,00</td>
                               <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                           </tr>
                           <tr>
@@ -121,15 +155,15 @@
                               <td></td>
                               <td></td>
                               <td>Sub-Total</td>
-                              <td class="text-right">255,90 €</td>
+                              <td class="text-right">R$144,80</td>
                           </tr>
                           <tr>
                               <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
-                              <td>Shipping</td>
-                              <td class="text-right">6,90 €</td>
+                              <td>Entrega</td>
+                              <td class="text-right">R$5,00</td>
                           </tr>
                           <tr>
                               <td></td>
@@ -137,7 +171,7 @@
                               <td></td>
                               <td></td>
                               <td><strong>Total</strong></td>
-                              <td class="text-right"><strong>346,90 €</strong></td>
+                              <td class="text-right"><strong>R$194,80</strong></td>
                           </tr>
                       </tbody>
                   </table>
@@ -146,68 +180,14 @@
           <div class="col mb-2">
               <div class="row">
                   <div class="col-sm-12  col-md-6">
-                      <button class="btn btn-block btn-light">Continue Shopping</button>
+                      <button class="btn btn-block btn-light">Continue comprando</button>
                   </div>
                   <div class="col-sm-12 col-md-6 text-right">
-                      <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
-                  </div>
+                      <button class="btn btn-lg btn-block btn-success text-uppercase">Finalizar Pedido</button>  
+				</div>
               </div>
           </div>
       </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="text-light">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3 col-lg-4 col-xl-3">
-                  <h5>About</h5>
-                  <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                  <p class="mb-0">
-                      Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-                  </p>
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                  <h5>Informations</h5>
-                  <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                  <ul class="list-unstyled">
-                      <li><a href="">Link 1</a></li>
-                      <li><a href="">Link 2</a></li>
-                      <li><a href="">Link 3</a></li>
-                      <li><a href="">Link 4</a></li>
-                  </ul>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                  <h5>Others links</h5>
-                  <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                  <ul class="list-unstyled">
-                      <li><a href="">Link 1</a></li>
-                      <li><a href="">Link 2</a></li>
-                      <li><a href="">Link 3</a></li>
-                      <li><a href="">Link 4</a></li>
-                  </ul>
-              </div>
-
-              <div class="col-md-4 col-lg-3 col-xl-3">
-                  <h5>Contact</h5>
-                  <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                  <ul class="list-unstyled">
-                      <li><i class="fa fa-home mr-2"></i> My company</li>
-                      <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                      <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                      <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
-                  </ul>
-              </div>
-              <div class="col-12 copyright mt-3">
-                  <p class="float-left">
-                      <a href="#">Back to top</a>
-                  </p>
-                  <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p>
-              </div>
-          </div>
-      </div>
-  </footer>
   </body>
 </html>
