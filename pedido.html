@@ -16,14 +16,14 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="shrink-to-fita384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <link href="css/pedido.css" rel="stylesheet">
+
   </head>
   
   <body>
-  	<div>
   	<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
@@ -50,11 +50,10 @@
 			       <li class="nav-item">
 			        <a class="nav-link" href="login.html">Login</a>
 			      </li>
-			    </ul>
-			  </div>
-			</div>
-		</nav>
-	</div>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <!--Page Content -->
     <div class="row shop-tracking-status">  
       <div class="col-md-12">
@@ -62,7 +61,7 @@
       
               <div class="form-horizontal">
                   <div class="form-group">
-                      <label for="inputOrderTrackingID" class="col-sm-2 control-label">ID Pedido</label>
+                      <label for="inputOrderTrackingID" class="col-sm-2 control-label" style=" margin-top: 50px; color: #F06292; ">ID Pedido</label>
                           <div class="col-sm-10">
                           <input type="text" class="form-control" id="inputOrderTrackingID" value="" placeholder="# coloque o id do seu pedido aqui">
                       </div>
@@ -74,9 +73,9 @@
                   </div>
               </div>
       
-              <h4>Status do seu pedido:</h4>
+              <h4 style="margin: 20px;">Status do seu pedido:</h4>
 
-              <ul class="list-group">
+              <ul class="list-group" style="margin: 10px;">
                   <li class="list-group-item">
                       <span class="prefix">Data de criação:</span>
                       <span class="label label-success">12.12.2013</span>
@@ -90,10 +89,9 @@
                       <span class="label label-success">Comentário do cliente</span>
                   </li>
                   <li class="list-group-item">You can find out latest status of your order with the following link:</li>
-                  <li class="list-group-item"><a href="#">//tracking/link/goes/here</a></li>
               </ul>
 
-              <div class="order-status">
+              <div class="order-status" style="margin-left:20px; margin-right:20px;">
 
                   <div class="order-status-timeline">
                       <!-- class names: c0 c1 c2 c3 and c4 -->
@@ -101,23 +99,23 @@
                   </div>
 
                   <div class="image-order-status image-order-status-new active img-circle">
-                      <span class="status">Pedido Aceito</span>
+                      <span class="status">Aguardando Pedido</span>
                       <div class="icon"></div>
                   </div>
                   <div class="image-order-status image-order-status-active active img-circle">
-                      <span class="status">Em Preparo</span>
+                      <span class="status">Pedido Aceito</span>
                       <div class="icon"></div>
                   </div>
                   <div class="image-order-status image-order-status-intransit active img-circle">
-                      <span class="status">Indo para entrega</span>
+                      <span class="status">Em Preparo</span>
                       <div class="icon"></div>
                   </div>
                   <div class="image-order-status image-order-status-delivered active img-circle">
-                      <span class="status">Entregue</span>
+                      <span class="status">Indo para entrega</span>
                       <div class="icon"></div>
                   </div>
                   <div class="image-order-status image-order-status-completed active img-circle">
-                      <span class="status">Finalizado</span>
+                      <span class="status">Entregue</span>
                       <div class="icon"></div>
                   </div>
 
