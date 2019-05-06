@@ -1,106 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Pizzas</title>
-    <link rel="shortcut icon" href="img/icon.png"/> 
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="shrink-to-fita384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  </head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/icon.png" height="42" width="42">Pizzalola</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="pedido.html">Pedido
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-        </ul>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Pizzas</title>
+      <link rel="shortcut icon" href="img/icon.png"/>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="shrink-to-fita384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/icon.png" height="42" width="42">Pizzalola</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="pedido.html">Pedido
+                     <span class="sr-only">(current)</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="login.html">Login</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Page Content -->
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <legend>Gerenciar Estoque</legend>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <table class="table table-responsive table-hover table-bordered ">
+                  <thead>
+                     <tr class="info">
+                        <th>Item</th>
+                        <th>Quantidade (Kg)</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Calabresa</td>
+                        <td><input class="form-control" type="number" value="10" disabled/></td>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-primary btn-sm">Edit</button>     
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Mussarela</td>
+                        <td><input class="form-control" type="number" value="15" disabled/></td>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-primary btn-sm">Edit</button>     
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Cebola</td>
+                        <td><input class="form-control" type="number" value="5" disabled/></td>
+                        </td>
+                        <td>
+                           <button type="button" class="btn btn-primary btn-sm">Edit</button>     
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <button type="button" class="btn btn-primary btn-sm">Adicionar Item</button>
+            </div>
+         </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <legend>Gerenciar Estoque</legend>
-        </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-md-4">
-        <table class="table table-responsive table-hover table-bordered ">
-          <thead>
-            <tr class="info">
-              <th>Item</th>
-              <th>Quantidade (Kg)</th>
-              <th></th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Calabresa</td>
-              <td><input class="form-control" type="number" value="10" disabled/></td></td>
-              <td>
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>     
-              </td>
-            </tr>
-            <tr>
-              <td>Mussarela</td>
-              <td><input class="form-control" type="number" value="15" disabled/></td></td>
-              <td>
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>     
-              </td>
-            </tr>
-            <tr>
-              <td>Cebola</td>
-              <td><input class="form-control" type="number" value="5" disabled/></td></td>
-              <td>
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>     
-              </td>
-            </tr>
-           
-          </tbody>
-        </table>
-        <button type="button" class="btn btn-primary btn-sm">Adicionar Item</button>
-      </div>
-  </div>
-</div>
-
-</body>
-
+	  <!-- Footer -->
+      <footer class="py-4 bg-dark">
+         <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; ATC 2019</p>
+         </div>
+         <!-- /.container -->
+      </footer>
+   </body>
 </html>
